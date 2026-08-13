@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#1A1A2E"
+    android:padding="24dp">
+
+    <!-- หัวข้อ -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="🦊 OXIDE ESP + AIMBOT"
+        android:textSize="28sp"
+        android:textColor="#FFA500"
+        android:textStyle="bold"
+        android:layout_marginBottom="32dp" />
+
+    <!-- สถานะเกม -->
+    <TextView
+        android:id="@+id/tvGameStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="⏳ กำลังตรวจสอบเกม..."
+        android:textSize="16sp"
+        android:textColor="#FFFFFF"
+        android:gravity="center"
+        android:background="#16213E"
+        android:padding="12dp"
+        android:layout_marginBottom="24dp" />
+
+    <!-- ปุ่ม Inject -->
+    <Button
+        android:id="@+id/btnInject"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="🚀 INJECT"
+        android:textSize="20sp"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#E94560"
+        android:layout_marginBottom="16dp" />
+
+    <!-- ปุ่ม ESP -->
+    <Button
+        android:id="@+id/btnESP"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="👁️ ESP"
+        android:textSize="18sp"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#533483"
+        android:layout_marginBottom="12dp" />
+
+    <!-- ปุ่ม Aimbot -->
+    <Button
+        android:id="@+id/btnAimbot"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="🎯 Aimbot"
+        android:textSize="18sp"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#0F3460"
+        android:layout_marginBottom="12dp" />
+
+    <!-- ตัวเลือกเป้า -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="12dp">
+
+        <Button
+            android:id="@+id/btnHead"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:text="🎯 หัว"
+            android:textSize="14sp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#2ECC71"
+            android:layout_marginRight="8dp" />
+
+        <Button
+            android:id="@+id/btnBody"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:text="🎯 ตัว"
+            android:textSize="14sp"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#3498DB" />
+    </LinearLayout>
+
+    <!-- ตัวเลื่อน FOV -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="FOV: 200"
+        android:id="@+id/tvFOV"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        android:layout_marginTop="8dp" />
+
+    <SeekBar
+        android:id="@+id/sbFOV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="500"
+        android:progress="200"
+        android:thumbTint="#FFA500"
+        android:progressTint="#FFA500" />
+
+    <!-- ตัวเลื่อน Smooth -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Smooth: 50"
+        android:id="@+id/tvSmooth"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        android:layout_marginTop="8dp" />
+
+    <SeekBar
+        android:id="@+id/sbSmooth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="100"
+        android:progress="50"
+        android:thumbTint="#2ECC71"
+        android:progressTint="#2ECC71" />
+
+    <!-- ข้อความท้าย -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="🦊 fox orange v1.0"
+        android:textColor="#888888"
+        android:textSize="12sp"
+        android:layout_marginTop="24dp" />
+
+</LinearLayout>
