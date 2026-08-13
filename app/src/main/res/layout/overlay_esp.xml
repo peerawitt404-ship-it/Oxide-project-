@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent">
+
+    <!-- ESP Canvas -->
+    <com.oxide.esp.ESPOverlayService.ESPView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/esp_canvas" />
+
+    <!-- ปุ่ม FOV Toggle -->
+    <Button
+        android:id="@+id/btnFOV"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:text="⊙"
+        android:textSize="20sp"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#FFA500"
+        android:layout_gravity="bottom|start"
+        android:layout_margin="16dp"
+        android:alpha="0.6" />
+
+    <!-- Drag Area -->
+    <LinearLayout
+        android:id="@+id/esp_drag_area"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:background="@android:color/transparent"
+        android:layout_gravity="top|end"
+        android:layout_margin="16dp" />
+
+</FrameLayout>
